@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# 편집기
+.vscode/
+.idea/
+
+# 원본 자료(레퍼런스)는 저장소에 올리지 않음
+*.pdf
