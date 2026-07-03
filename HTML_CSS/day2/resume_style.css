@@ -14,7 +14,7 @@
   --color-card: #ffffff;
   --radius: 14px;
   --shadow: 0 6px 24px rgba(20, 40, 90, 0.08);
-  --gap: 24px;
+  --gap: 36px; /* 섹션 카드 사이 간격 (넉넉하게) */
 }
 
 /* ---------- 1. 리셋 & Box Model 기본값 ---------- */
@@ -36,6 +36,13 @@ body {
 .page {
   max-width: 860px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+/* 본문: 섹션 카드들을 세로로 일정하게 띄우기 */
+main {
   display: flex;
   flex-direction: column;
   gap: var(--gap);
