@@ -84,6 +84,12 @@ a:hover {
   font-size: 0.95rem;
 }
 
+/* 연락처 아이콘 (Font Awesome) */
+.contact i {
+  color: var(--color-primary);
+  margin-right: 4px;
+}
+
 /* ---------- 3. 섹션 카드 (Box Model: padding·border·shadow) ---------- */
 .section {
   background: var(--color-card);
@@ -98,6 +104,13 @@ a:hover {
   padding-bottom: 10px;
   margin-bottom: 16px;
   border-bottom: 3px solid var(--color-primary);
+}
+
+/* 섹션 제목 앞 아이콘 (Font Awesome) */
+.section h2 i,
+.section h3 i {
+  margin-right: 8px;
+  font-size: 0.9em;
 }
 
 .section h3 {
