@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>콘솔 사칙연산 계산기 — JavaScript 1일차</title>
+  <style>
+    body {
+      font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      line-height: 1.7; color: #222; max-width: 720px;
+      margin: 0 auto; padding: 40px 20px; background: #f4f6fb;
+    }
+    .card {
+      background: #fff; border-radius: 14px; padding: 28px 30px;
+      box-shadow: 0 6px 24px rgba(20, 40, 90, 0.08);
+    }
+    h1 { margin-top: 0; font-size: 1.5rem; }
+    .hint { color: #555; font-size: 0.95rem; }
+    ol { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    code { background: #eef1f6; padding: 2px 6px; border-radius: 5px;
+           font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    pre { background: #0f172a; color: #e2e8f0; padding: 16px 18px; border-radius: 10px;
+          overflow-x: auto; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    kbd { background: #333; color: #fff; border-radius: 5px; padding: 2px 7px; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🧮 콘솔 사칙연산 계산기</h1>
+    <p class="hint">OZ 코딩스쿨 · JavaScript 1일차 과제 · 브라우저 콘솔에서 실행하는 계산기</p>
+
+    <ol>
+      <li>개발자 도구를 엽니다 — <kbd>F12</kbd> 또는 <kbd>⌥⌘I</kbd>(Mac) → <b>Console</b> 탭</li>
+      <li>페이지가 로드되면 자동으로 테스트 결과가 콘솔에 출력됩니다.</li>
+      <li>직접 계산하려면 콘솔에 아래처럼 입력하세요:</li>
+    </ol>
+
+    <pre>calculate("3 + 4 * 2")          // 11
+calculate("10 - 2 * 3 + 8 / 4")   // 6
+calculate("1 + 2 + 3 + 4 + 5 * 6") // 40</pre>
+
+    <p class="hint">
+      지원: 사칙연산 <code>+ - * /</code> · 긴 수식 · 우선순위(<code>*</code>·<code>/</code> 먼저).
+      소수점과 음수도 처리합니다. <code>eval</code> 없이 직접 구현했습니다.
+    </p>
+  </div>
+
+  <!-- 계산기 로직 로드 -->
+  <script src="calculator.js"></script>
+</body>
+</html>
