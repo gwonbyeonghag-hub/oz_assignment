@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 암호화폐 가격 추적기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🪙 실시간 암호화폐 추적기</h1>
+    <input id="search" type="text" placeholder="코인 검색 (예: BTC)">
+</header>
+
+<div class="tabs">
+    <button class="tab active" data-tab="all">전체보기</button>
+    <button class="tab" data-tab="favorites">관심항목</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th class="col-star">★</th>
+            <th>코인</th>
+            <th>현재가(USDT)</th>
+            <th>24h</th>
+        </tr>
+    </thead>
+    <tbody id="coin-list"></tbody>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>
